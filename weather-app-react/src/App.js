@@ -32,7 +32,7 @@ handleSubmit = async (event) => {
   this.setState({ showMessage: false });
 
   // Obtener la clave de API desde una variable de entorno
-  const API_KEY = '0326f54842bef742974952568b236ccf';
+  const API_KEY = '';
 
   // Crear la URL de la API con la ciudad seleccionada
   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.selectedCity}&appid=${API_KEY}&lang=es`;
