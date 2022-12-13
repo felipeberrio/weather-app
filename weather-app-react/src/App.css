@@ -1,0 +1,59 @@
+/* Importar Bootstrap */
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css";
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Establecer el fondo de la página */
+body {
+  background-image: linear-gradient(to bottom, #0000ff, #00008b);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container h1, p, form label:nth-child(1){
+  color: antiquewhite;
+}
+
+.float-container {
+  display: flex;
+}
+
+.float-container form, input{
+  float: left;
+}
+
+.float-container .card {
+  float: right;
+}
+
+form, .card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Aplicar un efecto de sombra a todos los elementos con la clase .card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 500px;
+  height: 200px;
+}
