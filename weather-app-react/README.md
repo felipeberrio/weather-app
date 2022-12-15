@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+### APP WEATHER
+
+Este código es un componente de React que muestra una lista desplegable de ciudades y un formulario que permite a un usuario seleccionar una ciudad. Cuando el usuario envía el formulario, se hace una solicitud a la API del clima para obtener la información del clima para la ciudad seleccionada. La información del clima se muestra en una tarjeta después de que se envía el formulario.
+
+Algunas líneas en particular:
+
+La primera línea importa la librería de React, que se utiliza para crear componentes de React.
+
+La segunda línea importa la clase Card de la librería react-bootstrap, que se utiliza para mostrar la información del clima en una tarjeta.
+
+La tercera línea importa la función fetch para hacer solicitudes a una API.
+
+La quinta línea importa la hoja de estilos que se utiliza para dar formato a la interfaz de usuario.
+
+La clase CityDropdown extiende la clase React.Component y define un componente de React que se puede utilizar en otro lugar en la aplicación.
+
+La clase CityDropdown tiene un estado inicial que incluye una lista de ciudades y una cadena vacía que se utiliza para almacenar la ciudad seleccionada por el usuario. También tiene una propiedad para almacenar la información del clima que se obtiene de la API y una propiedad para mostrar o ocultar un mensaje de bienvenida.
+
+El método handleChange se llama cuando el usuario selecciona una ciudad diferente en el menú desplegable. Actualiza el estado del componente con la nueva ciudad seleccionada.
+
+El método handleSubmit hace una solicitud a la API del clima para obtener la información del clima para la ciudad seleccionada. Si la solicitud tiene éxito, se actualiza el estado del componente con la información del clima y se oculta el mensaje de bienvenida. Si hay un error, se muestra una alerta con el mensaje de error.
+
+El método render es el encargado de dibujar el componente en la página web. Muestra un mensaje de bienvenida y un formulario que contiene el menú desplegable de ciudades. Si se selecciona una ciudad y se envía el formulario con éxito, también se muestra la información del clima en una tarjeta.
+
+La última línea exporta la clase CityDropdown como un módulo que se puede importar en otro lugar en la aplicación.
